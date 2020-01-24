@@ -8,6 +8,6 @@ I am trying to make it better and convenient
  1. `git clone https://github.com/x3rz/dexer.git ` 
  2. `cd dexter`
  3. `chmod +x install.sh`
- 4. `./install.sh`
+ 4. `sudo bash install.sh`
 
 
