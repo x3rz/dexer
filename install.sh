@@ -43,7 +43,7 @@ sudo apt-get install -y binwalk
 sleep 1
 
 echo "Installing Tesseract and Foremost.."
-sudo apt install -y tesseract foremost
+sudo apt install -y tesseract-ocr foremost
 
 echo "Installing ROT11"
 sudo apt install -y bsdgames
