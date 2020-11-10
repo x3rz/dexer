@@ -84,4 +84,8 @@ sudo apt-get install scapy
 echo "Installing tcpflow"
 sudo apt-get install -y tcpflow
 
+echo "rlwrap for netcat history"
+sudo apt-get install -y rlwrap
+sudo apt install gobuster
 
+echo "downloading pspy64 and pspy32 for monetring cronjobs"
