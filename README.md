@@ -1,7 +1,7 @@
 # dexer
-I use this script to install all the packages and tools that I require for CTFs on one go 
+I use this script to install all the packages and tools that I require for CTFs and pentesting in one go 
 
-I am trying to make it better and convenient
+I am trying to make it better and convenient.
 
 ### Usage
 
