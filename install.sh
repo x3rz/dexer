@@ -87,5 +87,35 @@ sudo apt-get install -y tcpflow
 echo "rlwrap for netcat history"
 sudo apt-get install -y rlwrap
 sudo apt install gobuster
+sudo apt install seclists
+sudo apt install brave
+sudo apt install apt-transport-https curl\n
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list\n
+sudo apt update 
+sudo apt install brave-browser
+go get -u github.com/tomnomnom/httprobe
+go get -u github.com/tomnomnom/waybackurls
+go get -u github.com/tomnomnom/gf
+go get github.com/Emoe/kxss
+GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+GO111MODULE=on go get -u -v github.com/lc/gau
+sudo apt-get install libpcap-dev
+GO111MODULE=on go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
+go get github.com/michenriksen/aquatone
+go get github.com/tomnomnom/assetfinder
+go get -u github.com/tomnomnom/qsreplace
+GO111MODULE=on go get -v github.com/hahwul/dalfox/v2
+go get -u github.com/tomnomnom/anew
 
-echo "downloading pspy64 and pspy32 for monetring cronjobs"
+mkdir ~/.gf
+cp -r ~/go/src/github.com/tomnomnom/gf/examples ~/.gf/
+echo 'source ~/go/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.zshrc
+echo 'source ~/go/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
+git clone https://github.com/1ndianl33t/Gf-Patterns
+mv Gf-Patterns/*.json ~/.gf
+nuclei -update-templates
+sudo cp ~/go/bin/* /usr/bin/
+
+git clone https://github.com/dwisiswant0/apkleaks.git
+cd apkleaks && ln -s $(pwd)/apkleaks.py /usr/bin/apkleaks
