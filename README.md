@@ -11,3 +11,5 @@ I am trying to make it better and convenient.
  4. `sudo bash install.sh`
 
 
+**Bash Profile**
+Feel free to use it for HTB/THM or anything
