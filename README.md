@@ -11,5 +11,13 @@ I am trying to make it better and convenient.
  4. `sudo bash install.sh`
 
 
-**Bash Profile**
+#### Bash Profile
 Feel free to use it for HTB/THM or anything
+
+**Setup:**
+```bash
+if [ -f ~/.bash_profile ]; then
+  . ~/.bash_profile
+fi
+```
+Append the above lines in .bashrc or .zshrc accordingly.
